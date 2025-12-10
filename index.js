@@ -4,10 +4,10 @@ const cTag = document.getElementById("coefficientC");
 const solutionToggleTag = document.getElementById("solTog");
 
 function solveForX(){
-   let a = 3//parseFloat(aTag.value); 
-   let b = 7//parseFloat(bTag.value); 
-   let c = 8//parseFloat(cTag.value);
-   let solutionToggle = 3//parseFloat(solutionToggleTag.value);
+   let a = parseFloat(aTag.value); 
+   let b = parseFloat(bTag.value); 
+   let c = parseFloat(cTag.value);
+   let solutionToggle = parseFloat(solutionToggleTag.value);
 
    let result1 = (-1 * b + math.sqrt((b ** 2) - 4 * a * c))/(2 * a);
    let result2 = (-1 * b - math.sqrt((b ** 2) - 4 * a * c))/(2 * a);

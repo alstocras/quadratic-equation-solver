@@ -6,8 +6,22 @@
     <title>Quadratic Equation Solver</title>
 </head>
 <body>
-    <button onclick="solveForX()">Hey click here pls</button>
-    <script src="https://unpkg.com/mathjs@15.1.0"></script>
-    <script src="index.js"></script>
+    <center>
+        <label for="coefficientA">a:</label>
+        <input id="coefficientA" type="number">
+        <br><br>
+        <label for="coefficientB">b:</label>
+        <input id="coefficientB" type="number">
+        <br><br>
+        <label for="coefficientC">c:</label>
+        <input id="coefficientC" type="number">
+        <br><br>
+        <label for="solTog">How many solutions?</label>
+        <input id="solTog" type="number" placeholder="enter 3 for both, 2 for second, and 1 for first">
+        <br><br>
+        <button onclick="solveForX()">Solve</button>
+        <script src="https://unpkg.com/mathjs@15.1.0"></script>
+        <script src="index.js"></script>
+    </center>
 </body>
 </html>
