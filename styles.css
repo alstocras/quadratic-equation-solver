@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide');
+@import url('https://fonts.googleapis.com/css2?family=Lexend');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
+
+body{
+    background-color: rgb(0, 86, 92);
+    color: rgb(220, 234, 247);
+    font-family: 'Lexend';
+}
+h1{
+    font-family: 'Audiowide';
+}
+h2{
+    font-family: 'JetBrains Mono';
+}
+input{
+    font-family: 'JetBrains Mono';
+}
