@@ -7,6 +7,9 @@
 </head>
 <body>
     <center>
+        <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mathjs@15.1.0"></script>
+        <h1>Quadratic Equation Solver</h1>
         <label for="coefficientA">a:</label>
         <input id="coefficientA" type="number">
         <br><br>
@@ -17,10 +20,14 @@
         <input id="coefficientC" type="number">
         <br><br>
         <label for="solTog">How many solutions?</label>
-        <input id="solTog" type="number" placeholder="enter 3 for both, 2 for second, and 1 for first">
+        <input id="solTog" type="number">
+        <p>Enter 1 for the first solution, 2 for the second solution, and anything else for both.</p>
         <br><br>
         <button onclick="solveForX()">Solve</button>
-        <script src="https://unpkg.com/mathjs@15.1.0"></script>
+        <h2 id="answer">Result: 0 and 0</h2>
+        <p>Confused? A quadratic equation looks like the image below. You just need to enter the variables present. <br> If your equation doesn't look like this, then simplify it first.</p>
+        <p>\[ ax^2 + bx + c = 0 \]</p>
+        <p>If you get 'NaN' as a result, that means the solution is complex, like: \[ -\frac{2}{3} \pm \frac{5\sqrt{2}}{3}i \]</p>
         <script src="index.js"></script>
     </center>
 </body>
